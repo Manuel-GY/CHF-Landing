@@ -1100,7 +1100,7 @@
         .site-footer {
             background: #060c18;
             color: #8c9bb0;
-            padding: 70px 0 30px;
+            padding: 70px 0 105px;
             font-size: 0.9rem;
             border-top: 1px solid var(--border);
         }
@@ -1125,9 +1125,11 @@
             font-size: 0.82rem;
         }
         .footer-credit {
-            margin: 20px 0 0;
-            text-align: center;
-            font-size: 0.82rem;
+            margin: 6px 0 0;
+            color: #b6c3d6;
+        }
+        .footer-credit strong {
+            color: var(--accent-blue);
         }
 
         /* Floating WhatsApp */
@@ -1955,10 +1957,12 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; <span id="currentYear">2026</span> CHF Soporte Técnico e Ingeniería TI. Todos los derechos reservados.</p>
+                <div>
+                    <p style="margin: 0;">&copy; <span id="currentYear">2026</span> CHF Soporte Técnico e Ingeniería TI. Todos los derechos reservados.</p>
+                    <p class="footer-credit">Sitio web desarrollado por <strong>CHF Servicios</strong></p>
+                </div>
                 <a href="#inicio" style="color: var(--accent-blue);">Volver arriba <i class="fa-solid fa-arrow-up"></i></a>
             </div>
-            <p class="footer-credit">Sitio web desarrollado por CHF Servicios</p>
         </div>
     </footer>
 
