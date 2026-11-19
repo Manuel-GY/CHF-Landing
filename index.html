@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="es-CL" class="dark-theme">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#081121">
+    <title>CHF | Soporte Técnico de Alta Precisión & Soluciones TI</title>
+    <meta name="description" content="Servicio técnico especializado en PC gamer, notebooks, Apple Mac y redes de datos en Santiago. Diagnóstico express, componentes de alto rendimiento y atención 24/7.">
+    
+    <!-- Favicon Oficial CHF -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fuentes y Librerías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Schema.org Datos Estructurados -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ComputerRepairService",
+      "name": "CHF Soporte Técnico e Ingeniería TI",
+      "image": "chf-taller-reparacion.webp",
+      "telephone": "+56971865558",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Santiago",
+        "addressRegion": "Región Metropolitana",
+        "addressCountry": "CL"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "128"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-base: #081121;
+            --bg-card: rgba(13, 27, 42, 0.88);
+            --bg-card-hover: rgba(20, 40, 61, 0.96);
+            --bg-glass: rgba(8, 17, 33, 0.88);
+            --bg-alt: #0d1b2a;
+            
+            --border: rgba(255, 255, 255, 0.08);
+            --border-hover: rgba(76, 201, 240, 0.4);
+            --border-glow: rgba(76, 201, 240, 0.2);
+            
+            --accent-blue: #4cc9f0;
+            --accent-blue-glow: 0 0 24px rgba(76, 201, 240, 0.35);
+            --accent-cyan: #00d2ff;
+            --accent-amber: #f59e0b;
+            
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+            
+            --font-body: 'Plus Jakarta Sans', sans-serif;
+            --font-display: 'Space Grotesk', sans-serif;
+            --container: 1180px;
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+            --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 86px; }
+        body {
+            margin: 0;
+            background: var(--bg-base);
+            color: var(--text-main);
+            font-family: var(--font-body);
+            font-size: 16px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(76, 201, 240, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 85% 60%, rgba(76, 201, 240, 0.04) 0%, transparent 45%);
+            background-attachment: fixed;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        button, input, select, textarea { font: inherit; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .container {
+            width: min(var(--container), calc(100% - 44px));
+            margin-inline: auto;
+        }
+
+        .section {
+            padding: 96px 0;
+            position: relative;
+        }
+
+        /* Tipografía */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            color: #ffffff;
+            line-height: 1.2;
+            margin-top: 0;
+            letter-spacing: -0.02em;
+        }
+        h1 { font-size: clamp(2.4rem, 4.8vw, 3.8rem); font-weight: 700; }
+        h2 { font-size: clamp(2rem, 3.6vw, 2.75rem); font-weight: 700; margin-bottom: 16px; }
+        h3 { font-size: 1.25rem; font-weight: 700; }
+        p { margin-top: 0; margin-bottom: 1rem; color: var(--text-muted); }
+
+        .neon-text {
+            background: linear-gradient(135deg, #ffffff 30%, var(--accent-blue) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cyan-text {
+            color: var(--accent-cyan);
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-blue);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            background: rgba(76, 201, 240, 0.1);
+            border: 1px solid rgba(76, 201, 240, 0.25);
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            margin-bottom: 18px;
+        }
+        .eyebrow-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            box-shadow: 0 0 10px var(--accent-blue);
+            animation: pulse-dot 2s infinite;
+        }
+        @keyframes pulse-dot {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.7; }
+        }
+
+        .section-heading {
+            max-width: 680px;
+            margin: 0 auto 56px;
+            text-align: center;
+        }
+        .section-intro {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            line-height: 1.65;
+            margin-bottom: 0;
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-flex;
+            min-height: 50px;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 0 24px;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid transparent;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .btn-neon {
+            background: var(--accent-blue);
+            color: #081121;
+            box-shadow: 0 4px 18px rgba(76, 201, 240, 0.35);
+        }
+        .btn-neon:hover {
+            background: #3bb5db;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 26px rgba(76, 201, 240, 0.55);
+            color: #081121;
+        }
+        .btn-glass {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.15);
+            color: #ffffff;
+            backdrop-filter: blur(8px);
+        }
+        .btn-glass:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Top Announcement */
+        .announcement-bar {
+            background: #060c18;
+            color: #a1aebf;
+            font-size: 0.82rem;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .announcement-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .announcement-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--accent-blue);
+            font-weight: 700;
+        }
+        .announcement-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .announcement-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #8c9bb0;
+            transition: color 0.2s;
+        }
+        .announcement-links a:hover { color: #fff; }
+
+        /* Site Header */
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: var(--bg-glass);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            transition: box-shadow 0.2s;
+        }
+        .site-header.is-scrolled {
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.6);
+            border-bottom-color: rgba(76, 201, 240, 0.2);
+        }
+        .nav-wrap {
+            height: 74px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+        .brand-logo {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: #0d1b2a;
+            border: 1px solid rgba(76, 201, 240, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-blue);
+            font-size: 1.3rem;
+            box-shadow: 0 0 16px rgba(76, 201, 240, 0.2);
+            transition: transform 0.25s ease;
+        }
+        .brand:hover .brand-logo {
+            transform: scale(1.06);
+            box-shadow: 0 0 22px rgba(76, 201, 240, 0.4);
+        }
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+            white-space: nowrap;
+        }
+        .brand-name {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 0.08em;
+            line-height: 1.05;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+        .brand-live-dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            box-shadow: 0 0 8px var(--accent-blue);
+        }
+        .brand-tagline {
+            font-size: 0.62rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            letter-spacing: 0.08em;
+            margin-top: 2px;
+            opacity: 0.85;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .nav-link {
+            font-weight: 600;
+            font-size: 0.91rem;
+            color: #94a3b8;
+            padding: 8px 14px;
+            border-radius: var(--radius-full);
+            white-space: nowrap;
+            transition: all 0.2s ease;
+        }
+        .nav-link:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+        }
+        .btn-nav-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            height: 42px;
+            padding: 0 20px;
+            border-radius: var(--radius-full);
+            background: var(--accent-blue);
+            color: #081121;
+            font-size: 0.88rem;
+            font-weight: 800;
+            box-shadow: 0 0 18px rgba(76, 201, 240, 0.35);
+            transition: all 0.25s ease;
+            white-space: nowrap;
+        }
+        .btn-nav-whatsapp:hover {
+            background: #3bb5db;
+            transform: translateY(-2px);
+            box-shadow: 0 0 28px rgba(76, 201, 240, 0.6);
+        }
+        .menu-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: rgba(255, 255, 255, 0.05);
+            color: #ffffff;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 76px 0 64px;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            align-items: center;
+            gap: 52px;
+        }
+        .hero-desc {
+            font-size: 1.12rem;
+            color: var(--text-muted);
+            line-height: 1.75;
+            margin-bottom: 32px;
+            max-width: 580px;
+        }
+        .hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 30px;
+        }
+        .hero-guarantees {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px 24px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+        }
+        .guarantee-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: #d1d9e6;
+        }
+        .guarantee-item i {
+            color: var(--accent-blue);
+        }
+
+        /* Hero Visual */
+        .hero-visual {
+            position: relative;
+        }
+        .hero-image-wrap {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid rgba(76, 201, 240, 0.25);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(76, 201, 240, 0.12);
+            background: #0d1b2a;
+        }
+        .hero-image-wrap img {
+            width: 100%;
+            height: auto;
+            max-height: 480px;
+            object-fit: cover;
+            display: block;
+            filter: contrast(1.05);
+            transition: transform 0.6s ease;
+        }
+        .hero-image-wrap:hover img {
+            transform: scale(1.04);
+        }
+        .hero-rating-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(8, 14, 11, 0.85);
+            color: #ffffff;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 9px 16px;
+            border-radius: var(--radius-full);
+            font-size: 0.82rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .hero-rating-badge .stars { color: var(--accent-amber); }
+
+        .hero-float-card {
+            position: absolute;
+            bottom: -20px;
+            left: -20px;
+            background: rgba(14, 22, 18, 0.92);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            max-width: 280px;
+        }
+        .float-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 10px;
+            background: rgba(76, 201, 240, 0.15);
+            color: var(--accent-blue);
+            display: grid;
+            place-items: center;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+        .float-title {
+            font-weight: 800;
+            font-size: 0.95rem;
+            color: #ffffff;
+            margin: 0;
+        }
+        .float-sub {
+            font-size: 0.77rem;
+            color: var(--text-muted);
+            margin: 2px 0 0;
+        }
+
+        /* Trust Strip */
+        .trust-strip {
+            border-block: 1px solid var(--border);
+            background: var(--bg-alt);
+            padding: 34px 0;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .metric-card {
+            text-align: center;
+            padding: 0 16px;
+            position: relative;
+        }
+        .metric-card:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 15%;
+            height: 70%;
+            width: 1px;
+            background: var(--border);
+        }
+        .metric-number {
+            font-family: var(--font-display);
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            line-height: 1;
+            margin-bottom: 6px;
+        }
+        .metric-label {
+            font-size: 0.86rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin: 0;
+        }
+
+        /* Client Logo Marquee */
+        .clients-strip {
+            padding: 38px 0 42px;
+            border-bottom: 1px solid var(--border);
+            overflow: hidden;
+        }
+        .clients-heading {
+            color: var(--text-dim);
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            margin: 0 0 22px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .clients-marquee {
+            overflow: hidden;
+            mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+        }
+        .clients-track {
+            display: flex;
+            width: max-content;
+            animation: clients-scroll 32s linear infinite;
+        }
+        .clients-marquee:hover .clients-track {
+            animation-play-state: paused;
+        }
+        .clients-group {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0 20px 0 0;
+        }
+        .client-logo {
+            width: 210px;
+            height: 100px;
+            flex: 0 0 auto;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            display: grid;
+            place-items: center;
+            padding: 14px;
+        }
+        .client-logo img {
+            display: block;
+            width: auto;
+            height: 68px;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        .client-logo--light {
+            background: #ffffff;
+        }
+        .client-logo--dark {
+            background: #05070a;
+        }
+        .client-logo--penon {
+            background: #10131d;
+        }
+        @keyframes clients-scroll {
+            to { transform: translateX(-50%); }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .clients-marquee {
+                mask-image: none;
+                overflow-x: auto;
+            }
+            .clients-track {
+                animation: none;
+            }
+        }
+
+        /* Quote Box */
+        .quote-section {
+            background: #081121;
+        }
+        .quote-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 44px 48px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            max-width: 980px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .quote-box::before {
+            content: "";
+            position: absolute;
+            inset: -1px;
+            border-radius: var(--radius-lg);
+            padding: 1px;
+            background: linear-gradient(135deg, rgba(76, 201, 240, 0.4), transparent 60%);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+        .quote-form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-bottom: 28px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .form-group label {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #d1d9e6;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+        .form-group label i { color: var(--accent-blue); }
+        .form-control {
+            width: 100%;
+            padding: 13px 16px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: rgba(10, 16, 13, 0.9);
+            color: #ffffff;
+            font-size: 0.94rem;
+            transition: var(--transition);
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 16px rgba(76, 201, 240, 0.25);
+        }
+        .quote-preview {
+            background: rgba(76, 201, 240, 0.05);
+            border: 1px dashed rgba(76, 201, 240, 0.3);
+            border-radius: var(--radius-sm);
+            padding: 18px 22px;
+            margin-bottom: 28px;
+            font-size: 0.9rem;
+            color: #c0cde0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+        }
+        .quote-preview strong { color: var(--accent-blue); }
+
+        /* Services Grid */
+        .services-section {
+            background: var(--bg-base);
+        }
+        .filter-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
+        }
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 9px 20px;
+            border-radius: var(--radius-full);
+            font-size: 0.88rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .filter-btn:hover {
+            border-color: var(--accent-blue);
+            color: #ffffff;
+        }
+        .filter-btn.active {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+            color: #081121;
+            font-weight: 700;
+            box-shadow: 0 0 16px rgba(76, 201, 240, 0.35);
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .service-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: var(--transition);
+            position: relative;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--border-hover);
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(76, 201, 240, 0.15);
+            background: var(--bg-card-hover);
+        }
+        .service-image-box {
+            position: relative;
+            height: 180px;
+            overflow: hidden;
+            background: #0d1b2a;
+        }
+        .service-image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: contrast(1.1) brightness(0.9);
+            transition: transform 0.5s ease;
+        }
+        .service-card:hover .service-image-box img {
+            transform: scale(1.06);
+            filter: contrast(1.15) brightness(1);
+        }
+        .service-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: rgba(5, 10, 8, 0.88);
+            color: var(--accent-blue);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            backdrop-filter: blur(6px);
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .service-icon-floating {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            background: rgba(14, 22, 18, 0.92);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(76, 201, 240, 0.35);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+            color: var(--accent-blue);
+            display: grid;
+            place-items: center;
+            font-size: 1.15rem;
+            z-index: 3;
+        }
+        .service-content {
+            padding: 24px 24px 22px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .service-content h3 {
+            margin-bottom: 10px;
+            font-size: 1.15rem;
+            color: #ffffff;
+        }
+        .service-content p {
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .service-card-action {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+        }
+        .service-link {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--accent-blue);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.2s;
+        }
+        .service-link:hover {
+            color: #ffffff;
+            gap: 9px;
+        }
+
+        /* Features */
+        .why-us-section {
+            background: var(--bg-alt);
+            border-block: 1px solid var(--border);
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .feature-card {
+            padding: 32px 24px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+        }
+        .feature-card:hover {
+            border-color: var(--accent-blue);
+            box-shadow: 0 10px 30px rgba(76, 201, 240, 0.1);
+            transform: translateY(-3px);
+        }
+        .feature-icon {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            background: rgba(76, 201, 240, 0.12);
+            color: var(--accent-blue);
+            display: grid;
+            place-items: center;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+
+        /* Process */
+        .process-section {
+            background: var(--bg-base);
+        }
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .process-card {
+            text-align: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 32px 20px;
+            transition: var(--transition);
+        }
+        .process-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-hover);
+        }
+        .process-step-num {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            background: #0d1b2a;
+            border: 2px solid var(--accent-blue);
+            color: var(--accent-blue);
+            display: grid;
+            place-items: center;
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 1.25rem;
+            box-shadow: 0 0 16px rgba(76, 201, 240, 0.3);
+        }
+
+        /* Reviews */
+        .testimonials-section {
+            background: var(--bg-alt);
+            border-block: 1px solid var(--border);
+        }
+        .google-badge-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-full);
+            padding: 8px 20px;
+            margin-bottom: 24px;
+        }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .review-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 30px 26px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .review-stars {
+            color: var(--accent-amber);
+            font-size: 0.95rem;
+            margin-bottom: 14px;
+        }
+        .review-text {
+            font-size: 0.92rem;
+            line-height: 1.65;
+            color: #d1d9e6;
+            margin-bottom: 22px;
+            font-style: italic;
+        }
+        .review-author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+        }
+        .author-avatar {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: rgba(76, 201, 240, 0.15);
+            color: var(--accent-blue);
+            font-weight: 700;
+            display: grid;
+            place-items: center;
+            font-size: 0.95rem;
+        }
+        .author-meta strong { display: block; font-size: 0.92rem; color: #ffffff; }
+        .author-meta span { font-size: 0.77rem; color: var(--text-muted); }
+
+        /* FAQ */
+        .faq-section {
+            background: var(--bg-base);
+        }
+        .faq-accordion {
+            max-width: 820px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .faq-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+        .faq-item.is-open {
+            border-color: var(--accent-blue);
+            box-shadow: 0 4px 20px rgba(76, 201, 240, 0.1);
+        }
+        .faq-trigger {
+            width: 100%;
+            text-align: left;
+            padding: 20px 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            font-family: var(--font-display);
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: #ffffff;
+        }
+        .faq-icon {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            display: grid;
+            place-items: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            transition: transform 0.3s ease;
+            flex-shrink: 0;
+        }
+        .faq-item.is-open .faq-icon {
+            transform: rotate(180deg);
+            background: var(--accent-blue);
+            color: #081121;
+        }
+        .faq-content {
+            padding: 0 24px 22px;
+            display: none;
+            font-size: 0.94rem;
+            color: var(--text-muted);
+            line-height: 1.7;
+        }
+        .faq-item.is-open .faq-content { display: block; }
+
+        /* CTA */
+        .cta-section {
+            padding: 80px 0;
+            background: radial-gradient(circle at 50% 50%, rgba(76, 201, 240, 0.12) 0%, #081121 80%);
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+        .cta-box { max-width: 720px; margin: 0 auto; }
+        .cta-box h2 { font-size: clamp(2.1rem, 4vw, 3rem); margin-bottom: 18px; }
+        .cta-box p { color: #b6c3d6; font-size: 1.15rem; margin-bottom: 34px; }
+        .cta-buttons { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+
+        /* Footer */
+        .site-footer {
+            background: #060c18;
+            color: #8c9bb0;
+            padding: 70px 0 30px;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border);
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr 1fr 1.1fr;
+            gap: 48px;
+            margin-bottom: 50px;
+        }
+        .footer-col h4 { color: #ffffff; font-size: 0.98rem; font-weight: 700; margin-bottom: 20px; }
+        .footer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 11px; }
+        .footer-links a { color: #8c9bb0; transition: color 0.2s; }
+        .footer-links a:hover { color: var(--accent-blue); }
+        .footer-contact-item { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+        .footer-contact-item i { color: var(--accent-blue); margin-top: 3px; }
+        .footer-bottom {
+            padding-top: 26px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.82rem;
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 26px;
+            right: 26px;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .whatsapp-float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--accent-blue);
+            color: #081121;
+            display: grid;
+            place-items: center;
+            font-size: 1.9rem;
+            box-shadow: 0 0 24px rgba(76, 201, 240, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .whatsapp-float-btn:hover { transform: scale(1.1); box-shadow: 0 0 34px rgba(76, 201, 240, 0.7); }
+        .whatsapp-tooltip {
+            background: rgba(14, 22, 18, 0.95);
+            border: 1px solid rgba(76, 201, 240, 0.3);
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+
+        .mobile-only-btn { display: none; }
+
+        @media (max-width: 1024px) {
+            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+            .hero-visual { max-width: 600px; margin: 0 auto; width: 100%; }
+            .service-grid { grid-template-columns: repeat(2, 1fr); }
+            .features-grid { grid-template-columns: repeat(2, 1fr); }
+            .process-grid { grid-template-columns: repeat(2, 1fr); }
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
+        }
+
+        @media (max-width: 768px) {
+            .announcement-bar { display: none; }
+            .menu-toggle { display: flex; }
+            .nav-links {
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: #0d1b2a;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px 24px;
+                border-bottom: 1px solid var(--border);
+                display: none;
+                gap: 12px;
+            }
+            .nav-links.is-open { display: flex; }
+            .nav-link { width: 100%; }
+            .mobile-only-btn { display: flex; width: 100%; margin-top: 8px; justify-content: center; }
+            .nav-actions { display: none; }
+            .quote-form-grid { grid-template-columns: 1fr; }
+            .quote-box { padding: 28px 20px; }
+            .reviews-grid { grid-template-columns: 1fr; }
+            .whatsapp-tooltip { display: none; }
+        }
+
+        @media (max-width: 540px) {
+            .service-grid { grid-template-columns: 1fr; }
+            .features-grid { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: 1fr; }
+            .metrics-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .hero-ctas { flex-direction: column; }
+            .footer-bottom { flex-direction: column; text-align: center; gap: 14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra Superior -->
+    <div class="announcement-bar">
+        <div class="container announcement-wrap">
+            <div class="announcement-badge">
+                <i class="fa-solid fa-bolt-lightning"></i>
+                <span>Atención de Lunes a Domingo · Emergencias Disponibles</span>
+            </div>
+            <div class="announcement-links">
+                <a href="tel:+56971865558"><i class="fa-solid fa-phone"></i> +56 9 7186 5558</a>
+                <a href="#contacto"><i class="fa-solid fa-clock-rotate-left"></i> Turnos Continuos y Urgencias</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navegación -->
+    <header class="site-header" id="header">
+        <div class="container nav-wrap">
+            <a class="brand" href="#inicio" aria-label="CHF Soporte Técnico - Inicio">
+                <div class="brand-logo">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">CHF <span class="brand-live-dot" title="Técnicos activos"></span></span>
+                    <span class="brand-tagline">SOPORTE TÉCNICO &amp; INGENIERÍA TI</span>
+                </div>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menú" aria-expanded="false" aria-controls="mainNav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <nav class="nav-links" id="mainNav">
+                <a class="nav-link" href="#servicios">Servicios</a>
+                <a class="nav-link" href="#cotizador">Cotizador</a>
+                <a class="nav-link" href="#como-trabajamos">Cómo Trabajamos</a>
+                <a class="nav-link" href="#opiniones">Opiniones</a>
+                <a class="nav-link" href="#faq">Preguntas</a>
+                <a class="btn btn-neon btn-sm mobile-only-btn" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20necesito%20cotizar%20un%20servicio%20t%C3%A9cnico%20para%20mi%20equipo." target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+                </a>
+            </nav>
+
+            <div class="nav-actions">
+                <a class="btn-nav-whatsapp" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20quisiera%20consultar%20por%20un%20diagn%C3%B3stico%20t%C3%A9cnico." target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span>+56 9 7186 5558</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>Ingeniería Informática Especializada</span>
+                    </div>
+                    <h1>Rendimiento Máximo y Reparación Experta en <span class="neon-text">PC, Mac y Redes</span></h1>
+                    <p class="hero-desc">
+                        Diagnóstico electrónico avanzado, componentes de última generación y optimización térmica para gaming, creadores y empresas. Respaldamos tu información con confidencialidad absoluta.
+                    </p>
+                    
+                    <div class="hero-ctas">
+                        <a class="btn btn-neon" href="https://wa.me/56971865558?text=Hola%2C%20CHF.%20Quisiera%20solicitar%20un%20diagn%C3%B3stico%20urgente%20para%20mi%20equipo." target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Inmediato
+                        </a>
+                        <a class="btn btn-glass" href="#cotizador">
+                            <i class="fa-solid fa-calculator"></i> Cotizador Express
+                        </a>
+                    </div>
+
+                    <div class="hero-guarantees">
+                        <div class="guarantee-item">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>Garantía escrita de 3 a 6 meses</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <span>Atención a domicilio y retiro</span>
+                        </div>
+                        <div class="guarantee-item">
+                            <i class="fa-solid fa-clipboard-check"></i>
+                            <span>Comprobante formal y transparente</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-image-wrap">
+                        <img src="chf-taller-reparacion.webp" alt="Servicio técnico reparando placa madre en laboratorio CHF" fetchpriority="high" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=1000&q=80';">
+                    </div>
+                    
+                    <div class="hero-rating-badge">
+                        <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                        <span>4.9 / 5.0 Google Reviews</span>
+                    </div>
+
+                    <div class="hero-float-card">
+                        <div class="float-icon">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                        </div>
+                        <div>
+                            <p class="float-title">+1.200 Equipos Recuperados</p>
+                            <p class="float-sub">MacBook, PC Gamer y Servidores</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Metrics -->
+        <div class="trust-strip">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-number">+1.200</div>
+                        <p class="metric-label">Equipos reparados con éxito</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">&lt; 15 min</div>
+                        <p class="metric-label">Tiempo promedio de respuesta</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">100%</div>
+                        <p class="metric-label">Seguridad y privacidad de datos</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">99.4%</div>
+                        <p class="metric-label">Clientes satisfechos en la RM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="clients-strip" aria-labelledby="clients-heading">
+            <div class="container">
+                <h2 class="clients-heading" id="clients-heading">Clientes que confían en CHF</h2>
+            </div>
+            <div class="clients-marquee">
+                <div class="clients-track">
+                    <ul class="clients-group" aria-label="Clientes CHF">
+                        <li class="client-logo client-logo--light">
+                            <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM.jpeg" alt="Apogen Residencia de Personas Mayores" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--dark">
+                            <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.21%20PM.jpeg" alt="Funeraria del Río" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--penon">
+                            <img src="clientes/penon-logo.jpg" alt="Peñón La Florida" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--light">
+                            <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM%20%281%29.jpeg" alt="Alcaldesa Residencia Adulto Mayor" loading="lazy">
+                        </li>
+                    </ul>
+                    <ul class="clients-group" aria-hidden="true">
+                        <li class="client-logo client-logo--light">
+                            <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM.jpeg" alt="" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--dark">
+                            <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.21%20PM.jpeg" alt="" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--penon">
+                            <img src="clientes/penon-logo.jpg" alt="" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--light">
+                            <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM%20%281%29.jpeg" alt="" loading="lazy">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Quote Builder -->
+        <section class="section quote-section" id="cotizador">
+            <div class="container">
+                <div class="quote-box">
+                    <div class="quote-header section-heading">
+                        <div class="eyebrow">
+                            <span class="eyebrow-dot"></span>
+                            <span>Cotizador Express</span>
+                        </div>
+                        <h2>Calcula tu Reparación en 3 Pasos</h2>
+                        <p class="section-intro">Selecciona tus datos y generamos una consulta pre-armada para coordinar vía WhatsApp sin pérdidas de tiempo.</p>
+                    </div>
+
+                    <div class="quote-form-grid">
+                        <div class="form-group">
+                            <label for="quoteDevice"><i class="fa-solid fa-laptop"></i> 1. Tipo de Dispositivo</label>
+                            <select id="quoteDevice" class="form-control">
+                                <option value="Notebook (Windows)">Notebook (HP, Lenovo, Asus, Dell, etc.)</option>
+                                <option value="MacBook / iMac / Mac mini">Apple (MacBook Pro/Air, iMac, Mac mini)</option>
+                                <option value="PC Escritorio / Gamer">PC de Escritorio / Torre Gamer</option>
+                                <option value="Consola de Videojuegos">Consola (PlayStation, Xbox, Nintendo Switch)</option>
+                                <option value="Redes / Cámaras / Infraestructura">Redes, WiFi o Cámaras CCTV para Empresa</option>
+                                <option value="Otro dispositivo">Otro requerimiento tecnológico</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quoteIssue"><i class="fa-solid fa-triangle-exclamation"></i> 2. Falla o Servicio Requerido</label>
+                            <select id="quoteIssue" class="form-control">
+                                <option value="No enciende o se apaga solo">No enciende o se reinicia de la nada</option>
+                                <option value="Lentitud extrema / Cambio a SSD">Lentitud extrema / Optimización o cambio a SSD</option>
+                                <option value="Mantenimiento preventivo y pasta térmica">Mantenimiento preventivo, limpieza y pasta térmica</option>
+                                <option value="Pantalla rota, bisagra o teclado">Pantalla rota, daño en bisagras o teclado</option>
+                                <option value="Virus, formateo y respaldo seguro">Virus, formateo, Windows/macOS y respaldo</option>
+                                <option value="Configuración de red, WiFi o servidores">Configuración de redes, cableado o servidores</option>
+                                <option value="Otro problema">Otro problema específico</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quoteMode"><i class="fa-solid fa-location-dot"></i> 3. Modalidad de Atención</label>
+                            <select id="quoteMode" class="form-control">
+                                <option value="Visita a domicilio / empresa">Visita técnica a Domicilio u Oficina</option>
+                                <option value="Retiro y entrega de equipo">Retiro y entrega coordinada</option>
+                                <option value="Entrega directa en Taller">Entrega directa en Taller</option>
+                                <option value="Soporte remoto en línea">Soporte remoto en línea</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quoteLocation"><i class="fa-solid fa-map-pin"></i> 4. Comuna / Ubicación (Opcional)</label>
+                            <input type="text" id="quoteLocation" class="form-control" placeholder="Ej: Providencia, Las Condes, Santiago, etc.">
+                        </div>
+                    </div>
+
+                    <div class="quote-preview">
+                        <div>
+                            <span>Pre-visualización de mensaje:</span>
+                            <div id="quoteSummaryText"><strong>Notebook (Windows)</strong> con falla de <strong>No enciende o se apaga solo</strong> (Modalidad: Visita a domicilio / empresa)</div>
+                        </div>
+                        <i class="fa-brands fa-whatsapp" style="font-size: 2rem; color: var(--accent-blue);"></i>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button id="sendQuoteBtn" type="button" class="btn btn-neon" style="min-height: 54px; padding: 0 36px; font-size: 1.05rem;">
+                            <i class="fa-brands fa-whatsapp"></i> Enviar a WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services-section" id="servicios">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>Especialidades Técnicas</span>
+                    </div>
+                    <h2>Servicios de Ingeniería TI y Mantenimiento</h2>
+                    <p class="section-intro">Soluciones de nivel profesional para usuarios exigentes y empresas en constante operación.</p>
+                </div>
+
+                <div class="filter-tabs">
+                    <button class="filter-btn active" data-filter="all">Todos los Servicios</button>
+                    <button class="filter-btn" data-filter="pc-mac">PC & Apple Mac</button>
+                    <button class="filter-btn" data-filter="redes">Redes & Seguridad</button>
+                    <button class="filter-btn" data-filter="gamer">Gamer & Consolas</button>
+                    <button class="filter-btn" data-filter="empresas">Empresas & TI</button>
+                </div>
+
+                <div class="service-grid">
+                    <!-- Servicio 1 -->
+                    <article class="service-card" data-category="pc-mac">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=800&q=80" alt="Reparación de hardware y placa madre" loading="lazy">
+                            <span class="service-badge">Más Solicitado</span>
+                            <div class="service-icon-floating"><i class="fa-solid fa-laptop-medical"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Reparación y Upgrades</h3>
+                            <p>Diagnóstico de placas electrónicas, cambio de pantallas, teclados, conectores de poder y aceleración con discos SSD NVMe y memorias RAM.</p>
+                            <div class="service-card-action">
+                                <a class="service-link" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20quisiera%20cotizar%20Reparaci%C3%B3n%20y%20Upgrade." target="_blank" rel="noopener noreferrer">Cotizar Reparación <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 2 -->
+                    <article class="service-card" data-category="pc-mac">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80" alt="Soporte técnico Mac" loading="lazy">
+                            <span class="service-badge">Especialidad Apple</span>
+                            <div class="service-icon-floating"><i class="fa-brands fa-apple"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Soporte Especializado Mac</h3>
+                            <p>Diagnóstico de placa lógica, baterías certificadas, flex de video, pantallas Retina y optimización integral de macOS para MacBook Pro, Air, iMac y Mac mini.</p>
+                            <div class="service-card-action">
+                                <a class="service-link" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20necesito%20soporte%20especializado%20para%20un%20equipo%20Mac." target="_blank" rel="noopener noreferrer">Cotizar Mac <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 3 -->
+                    <article class="service-card" data-category="pc-mac empresas">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Sistemas y respaldo" loading="lazy">
+                            <span class="service-badge">Seguridad de Datos</span>
+                            <div class="service-icon-floating"><i class="fa-solid fa-hard-drive"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Sistemas y Respaldo Seguro</h3>
+                            <p>Instalación limpia de Windows 11/10 y macOS, desinfección profunda de malware, clonación de discos y rescate preventivo de información sensible.</p>
+                            <div class="service-card-action">
+                                <a class="service-link" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20necesito%20instalaci%C3%B3n%20de%20sistema%20y%20respaldo." target="_blank" rel="noopener noreferrer">Consultar Respaldo <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 4 -->
+                    <article class="service-card" data-category="gamer">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80" alt="PC Gamer" loading="lazy">
+                            <span class="service-badge">High Performance</span>
+                            <div class="service-icon-floating"><i class="fa-solid fa-gamepad"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>PC Gamer y Workstations</h3>
+                            <p>Armado a medida, curvas de ventilación, refrigeración líquida custom, cambio de pasta térmica de alto rendimiento y benchmarking de estabilidad.</p>
+                            <div class="service-card-action">
+                                <a class="service-link" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20quiero%20armar%20o%20mejorar%20mi%20PC%20Gamer." target="_blank" rel="noopener noreferrer">Cotizar PC Gamer <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 5 -->
+                    <article class="service-card" data-category="gamer">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1486572788966-cfd3df1f5b42?auto=format&fit=crop&w=800&q=80" alt="Consolas de videojuegos" loading="lazy">
+                            <span class="service-badge">Preventivo</span>
+                            <div class="service-icon-floating"><i class="fa-solid fa-microchip"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Mantenimiento de Consolas</h3>
+                            <p>Limpieza ultrasónica profunda, reemplazo de metal líquido o pasta térmica premium y reducción de ruido en PS5, PS4, Xbox Series X/S y Nintendo Switch.</p>
+                            <div class="service-card-action">
+                                <a class="service-link" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20quisiera%20mantenimiento%20para%20mi%20consola." target="_blank" rel="noopener noreferrer">Cotizar Consola <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 6 -->
+                    <article class="service-card" data-category="redes empresas">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80" alt="Redes y cableado" loading="lazy">
+                            <span class="service-badge">Infraestructura</span>
+                            <div class="service-icon-floating"><i class="fa-solid fa-network-wired"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Redes WiFi & Cableado Estructurado</h3>
+                            <p>Soluciones WiFi Mesh sin caídas, armado de racks, cableado Cat6/Cat6A certificado, routers de alto tráfico y configuración de VPN empresarial.</p>
+                            <div class="service-card-action">
+                                <a class="service-link" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20necesito%20soporte%20en%20Redes%20y%20WiFi." target="_blank" rel="noopener noreferrer">Cotizar Redes <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 7 -->
+                    <article class="service-card" data-category="redes empresas">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80" alt="CCTV y cámaras" loading="lazy">
+                            <span class="service-badge">Vigilancia</span>
+                            <div class="service-icon-floating"><i class="fa-solid fa-video"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Cámaras de Seguridad & CCTV</h3>
+                            <p>Instalación de cámaras IP y sistemas NVR/DVR de alta definición. Transmisión remota fluida a tu teléfono con notificaciones inteligentes.</p>
+                            <div class="service-card-action">
+                                <a class="service-link" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20quisiera%20cotizar%20c%C3%A1maras%20de%20seguridad." target="_blank" rel="noopener noreferrer">Cotizar Cámaras <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 8 -->
+                    <article class="service-card" data-category="empresas">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Convenios TI" loading="lazy">
+                            <span class="service-badge">Corporativo</span>
+                            <div class="service-icon-floating"><i class="fa-solid fa-building-user"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Convenios y Soporte TI PYMES</h3>
+                            <p>Mesa de ayuda presencial y remota para empresas. Gestión de parque de computadores, seguridad de red y continuidad operativa 24/7.</p>
+                            <div class="service-card-action">
+                                <a class="service-link" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20busco%20soporte%20TI%20mensual%20para%20mi%20empresa." target="_blank" rel="noopener noreferrer">Planes Empresa <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Servicio 9 -->
+                    <article class="service-card" data-category="empresas">
+                        <div class="service-image-box">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Desarrollo web" loading="lazy">
+                            <span class="service-badge">Digital</span>
+                            <div class="service-icon-floating"><i class="fa-solid fa-code"></i></div>
+                        </div>
+                        <div class="service-content">
+                            <h3>Desarrollo Web & Automatización</h3>
+                            <p>Sitios web de carga ultrarrápida, tiendas online responsive y flujos de automatización para reducir tareas repetitivas en tu negocio.</p>
+                            <div class="service-card-action">
+                                <a class="service-link" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20quisiera%20consultar%20por%20Desarrollo%20Web." target="_blank" rel="noopener noreferrer">Cotizar Web <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="section why-us-section">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>Compromiso CHF</span>
+                    </div>
+                    <h2>¿Por Qué Confiar en Nosotros?</h2>
+                    <p class="section-intro">Protocolos de seguridad informática, repuestos certificados y servicio técnico con total transparencia.</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <h3>Privacidad Blindada</h3>
+                        <p>Tus archivos, contraseñas y datos jamás son vulnerados. Garantizamos estricta confidencialidad en cada revisión.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-receipt"></i></div>
+                        <h3>Presupuesto Transparente</h3>
+                        <p>Cero costos ocultos. Te informamos la falla exacta y el costo final antes de intervenir cualquier pieza.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-medal"></i></div>
+                        <h3>Garantía por Escrito</h3>
+                        <p>Respaldo de 3 a 6 meses en cada servicio. Si una falla persiste, respondemos de inmediato.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fa-solid fa-house-laptop"></i></div>
+                        <h3>Flexibilidad Total</h3>
+                        <p>Atención a domicilio en Santiago, entrega en taller técnico o asistencia remota en línea según tu necesidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="section process-section" id="como-trabajamos">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>Flujo de Atención</span>
+                    </div>
+                    <h2>Proceso Claro en 4 Etapas</h2>
+                    <p class="section-intro">Sin demoras ni trámites engorrosos. Así dejamos tu equipo operativo:</p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-card">
+                        <div class="process-step-num">01</div>
+                        <h3>Evaluación Express</h3>
+                        <p>Nos describes la falla por WhatsApp. Realizamos un pre-diagnóstico técnico sin costo.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="process-step-num">02</div>
+                        <h3>Visita o Recepción</h3>
+                        <p>Acudimos a tu domicilio u oficina en Santiago, o recibimos tu equipo en taller especializado.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="process-step-num">03</div>
+                        <h3>Trabajo y Pruebas</h3>
+                        <p>Tras tu aprobación, intervenimos con repuestos de primer nivel y realizamos test de estrés.</p>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="process-step-num">04</div>
+                        <h3>Entrega y Respaldo</h3>
+                        <p>Recibes tu equipo listo con comprobante formal y garantía por escrito de servicio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials-section" id="opiniones">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="google-badge-box">
+                        <i class="fa-brands fa-google" style="color: #4285f4; font-size: 1.25rem;"></i>
+                        <span>Calificación <strong>4.9 / 5</strong> en Google Reseñas</span>
+                    </div>
+                    <h2>Opiniones de Clientes Reales</h2>
+                    <p class="section-intro">La experiencia de quienes ya confían en nuestro soporte técnico.</p>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="review-text">"Excelente servicio. Mi MacBook Pro no encendía por una falla en la placa. En CHF encontraron el componente dañado y en 48 hrs estaba 100% operativo. Trabajo limpio y serio."</p>
+                        </div>
+                        <div class="review-author">
+                            <div class="author-avatar">MR</div>
+                            <div class="author-meta">
+                                <strong>Matías Rodríguez</strong>
+                                <span>MacBook Pro · Providencia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="review-text">"Cambiaron el disco de mi notebook a SSD y agregaron RAM. La velocidad es increíble, como nuevo. Además respetaron toda mi información personal. Totalmente recomendados."</p>
+                        </div>
+                        <div class="review-author">
+                            <div class="author-avatar">CV</div>
+                            <div class="author-meta">
+                                <strong>Carolina Valenzuela</strong>
+                                <span>Upgrade SSD · Las Condes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div>
+                            <div class="review-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            <p class="review-text">"Ordenaron todo el cableado de red y nos instalaron WiFi Mesh en la oficina. Cero caídas desde entonces y atención técnica súper rápida y transparente."</p>
+                        </div>
+                        <div class="review-author">
+                            <div class="author-avatar">EA</div>
+                            <div class="author-meta">
+                                <strong>Esteban Alarcón</strong>
+                                <span>Operaciones TI · Santiago Centro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section faq-section" id="faq">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>Dudas Habituales</span>
+                    </div>
+                    <h2>Preguntas Frecuentes</h2>
+                    <p class="section-intro">Todo lo que necesitas saber antes de contratar:</p>
+                </div>
+
+                <div class="faq-accordion">
+                    <div class="faq-item is-open">
+                        <button class="faq-trigger" type="button" aria-expanded="true">
+                            <span>¿Cómo funciona el servicio a domicilio y en qué comunas atienden?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            Atendemos en toda la Región Metropolitana (Providencia, Las Condes, Vitacura, Ñuñoa, Santiago Centro, Maipú, La Florida, San Miguel, etc.). Coordinamos día y hora, un técnico se desplaza a tu domicilio u oficina y realiza el trabajo in situ o retiro con acta formal.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" type="button" aria-expanded="false">
+                            <span>¿Cuánto tiempo demora el diagnóstico y la reparación?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            Mantenimientos y cambios de piezas toman entre 24 y 48 horas. Fallas electrónicas de placa madre toman entre 48 y 72 horas para pruebas de estrés. En emergencias contamos con atención prioritaria.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" type="button" aria-expanded="false">
+                            <span>¿Mis archivos personales y fotos están seguros durante el servicio?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            Totalmente. La privacidad de nuestros clientes es sagrada. No revisamos carpetas personales y, cuando el estado del disco lo permite, efectuamos respaldo preventivo de tus archivos.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" type="button" aria-expanded="false">
+                            <span>¿Qué garantía ofrecen en sus trabajos y repuestos?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            Ofrecemos garantía por escrito de 3 meses para reparaciones generales y hasta 6 a 12 meses en componentes nuevos. Si el equipo presenta la misma falla en el plazo, se revisa sin costo.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-trigger" type="button" aria-expanded="false">
+                            <span>¿Entregan comprobante de servicio y qué medios de pago aceptan?</span>
+                            <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                        </button>
+                        <div class="faq-content">
+                            Entregamos orden de servicio formal y comprobante detallado con el trabajo realizado y la garantía por escrito. Aceptamos transferencias bancarias, tarjetas de débito/crédito y efectivo. (No emitimos factura comercial).
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="cta-section" id="contacto">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>¿Tu Equipo Presenta Fallas? No Dejes que Empeore</h2>
+                    <p>Escríbenos por WhatsApp con el modelo y la falla. Te orientamos en minutos con una evaluación honesta y sin compromiso.</p>
+                    <div class="cta-buttons">
+                        <a class="btn btn-neon" href="https://wa.me/56971865558?text=Hola%2C%20CHF.%20Quisiera%20consultar%20por%20un%20servicio%20urgente." target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> Hablar por WhatsApp (+56 9 7186 5558)
+                        </a>
+                        <a class="btn btn-glass" href="tel:+56971865558">
+                            <i class="fa-solid fa-phone"></i> Llamar Directamente
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a class="brand" href="#inicio" aria-label="CHF Inicio">
+                        <div class="brand-logo" style="width: 38px; height: 38px; font-size: 1.1rem;">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="brand-text">
+                            <span class="brand-name">CHF</span>
+                            <span class="brand-tagline">SOPORTE TÉCNICO &amp; INGENIERÍA TI</span>
+                        </div>
+                    </a>
+                    <p style="margin-top: 18px; font-size: 0.88rem; line-height: 1.65; max-width: 320px;">
+                        Ingeniería informática de alta precisión para personas, profesionales y empresas en Santiago de Chile.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Reparación Notebooks</a></li>
+                        <li><a href="#servicios">Soporte Apple Mac</a></li>
+                        <li><a href="#servicios">PC Gamer &amp; Consolas</a></li>
+                        <li><a href="#servicios">Redes WiFi y Servidores</a></li>
+                        <li><a href="#servicios">Soporte TI para Empresas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#cotizador">Cotizador</a></li>
+                        <li><a href="#como-trabajamos">Cómo Trabajamos</a></li>
+                        <li><a href="#opiniones">Opiniones</a></li>
+                        <li><a href="#faq">Preguntas</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <div class="footer-contact-item">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong style="color: #fff; display: block;">WhatsApp</strong>
+                            <a href="https://wa.me/56971865558" target="_blank" rel="noopener noreferrer">+56 9 7186 5558</a>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <strong style="color: #fff; display: block;">Cobertura</strong>
+                            <span>Santiago y Región Metropolitana</span>
+                        </div>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <div>
+                            <strong style="color: #fff; display: block;">Disponibilidad</strong>
+                            <span>Lunes a Domingo · Atención y Emergencias</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2026</span> CHF Soporte Técnico e Ingeniería TI. Todos los derechos reservados.</p>
+                <a href="#inicio" style="color: var(--accent-blue);">Volver arriba <i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón Flotante -->
+    <aside class="whatsapp-float">
+        <span class="whatsapp-tooltip">¿Consulta técnica urgente? Chatea aquí</span>
+        <a class="whatsapp-float-btn" href="https://wa.me/56971865558?text=Hola%20CHF%2C%20tengo%20una%20consulta%20técnica." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </aside>
+
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        const menuToggle = document.getElementById("menuToggle");
+        const mainNav = document.getElementById("mainNav");
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener("click", () => {
+                const isOpen = mainNav.classList.toggle("is-open");
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+                menuToggle.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+            });
+            mainNav.querySelectorAll("a").forEach(link => {
+                link.addEventListener("click", () => {
+                    if (window.innerWidth <= 768) {
+                        mainNav.classList.remove("is-open");
+                        menuToggle.setAttribute("aria-expanded", "false");
+                        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+                    }
+                });
+            });
+        }
+
+        const header = document.getElementById("header");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 30) header.classList.add("is-scrolled");
+            else header.classList.remove("is-scrolled");
+        });
+
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const serviceCards = document.querySelectorAll(".service-card");
+        filterBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+                filterBtns.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                const filter = btn.getAttribute("data-filter");
+                serviceCards.forEach(card => {
+                    const categories = card.getAttribute("data-category") || "";
+                    card.style.display = (filter === "all" || categories.includes(filter)) ? "flex" : "none";
+                });
+            });
+        });
+
+        const faqItems = document.querySelectorAll(".faq-item");
+        faqItems.forEach(item => {
+            const trigger = item.querySelector(".faq-trigger");
+            trigger.addEventListener("click", () => {
+                const isOpen = item.classList.contains("is-open");
+                faqItems.forEach(i => {
+                    i.classList.remove("is-open");
+                    i.querySelector(".faq-trigger").setAttribute("aria-expanded", "false");
+                });
+                if (!isOpen) {
+                    item.classList.add("is-open");
+                    trigger.setAttribute("aria-expanded", "true");
+                }
+            });
+        });
+
+        const quoteDevice = document.getElementById("quoteDevice");
+        const quoteIssue = document.getElementById("quoteIssue");
+        const quoteMode = document.getElementById("quoteMode");
+        const quoteLocation = document.getElementById("quoteLocation");
+        const quoteSummaryText = document.getElementById("quoteSummaryText");
+        const sendQuoteBtn = document.getElementById("sendQuoteBtn");
+
+        function updateQuoteSummary() {
+            const device = quoteDevice.value;
+            const issue = quoteIssue.value;
+            const mode = quoteMode.value;
+            const loc = quoteLocation.value.trim();
+            let summary = `<strong>${device}</strong> con falla de <strong>${issue}</strong> (Modalidad: ${mode})`;
+            if (loc) summary += ` en <strong>${loc}</strong>`;
+            quoteSummaryText.innerHTML = summary;
+        }
+
+        [quoteDevice, quoteIssue, quoteMode, quoteLocation].forEach(el => {
+            el.addEventListener("change", updateQuoteSummary);
+            el.addEventListener("input", updateQuoteSummary);
+        });
+
+        sendQuoteBtn.addEventListener("click", () => {
+            const device = quoteDevice.value;
+            const issue = quoteIssue.value;
+            const mode = quoteMode.value;
+            const loc = quoteLocation.value.trim();
+            let msg = `Hola CHF, coticé en su sitio web el siguiente requerimiento:\n\n🖥️ Equipo: ${device}\n⚠️ Falla o necesidad: ${issue}\n📍 Modalidad: ${mode}\n`;
+            if (loc) msg += `🏙️ Comuna / Sector: ${loc}\n`;
+            msg += `\n¿Me podrían indicar disponibilidad y valor estimado? Gracias.`;
+            window.open(`https://wa.me/56971865558?text=${encodeURIComponent(msg)}`, "_blank");
+        });
+    </script>
+</body>
+</html>
