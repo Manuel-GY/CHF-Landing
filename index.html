@@ -872,6 +872,50 @@
             margin-bottom: 20px;
         }
 
+        /* About the team */
+        .about-section {
+            background: var(--bg-base);
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+        .team-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 28px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+        }
+        .team-avatar {
+            width: 64px;
+            height: 64px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            border: 1px solid var(--border-hover);
+            border-radius: 50%;
+            background: rgba(76, 201, 240, 0.1);
+            color: var(--accent-blue);
+            font-family: var(--font-display);
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        .team-card h3 {
+            margin: 0 0 4px;
+        }
+        .team-role {
+            color: var(--accent-blue);
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
         /* Process */
         .process-section {
             background: var(--bg-base);
@@ -1121,8 +1165,7 @@
             .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 36px; }
         }
 
-        @media (max-width: 768px) {
-            .announcement-bar { display: none; }
+        @media (max-width: 1200px) {
             .menu-toggle { display: flex; }
             .nav-links {
                 position: absolute;
@@ -1139,6 +1182,10 @@
             .nav-link { width: 100%; }
             .mobile-only-btn { display: flex; width: 100%; margin-top: 8px; justify-content: center; }
             .nav-actions { display: none; }
+        }
+
+        @media (max-width: 768px) {
+            .announcement-bar { display: none; }
             .quote-form-grid { grid-template-columns: 1fr; }
             .quote-box { padding: 28px 20px; }
             .reviews-grid { grid-template-columns: 1fr; }
@@ -1151,6 +1198,7 @@
             .process-grid { grid-template-columns: 1fr; }
             .metrics-grid { grid-template-columns: 1fr; }
             .footer-grid { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: 1fr; }
             .hero-ctas { flex-direction: column; }
             .footer-bottom { flex-direction: column; text-align: center; gap: 14px; }
         }
@@ -1190,6 +1238,7 @@
             </button>
 
             <nav class="nav-links" id="mainNav">
+                <a class="nav-link" href="#quienes-somos">Quiénes Somos</a>
                 <a class="nav-link" href="#servicios">Servicios</a>
                 <a class="nav-link" href="#cotizador">Cotizador</a>
                 <a class="nav-link" href="#como-trabajamos">Cómo Trabajamos</a>
@@ -1573,6 +1622,35 @@
             </div>
         </section>
 
+        <section class="section about-section" id="quienes-somos">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        <span>Nuestro equipo</span>
+                    </div>
+                    <h2>¿Quiénes Somos?</h2>
+                    <p class="section-intro">En CHF brindamos soporte técnico y soluciones TI para personas y empresas, con un compromiso de atención cercana y transparente.</p>
+                </div>
+                <div class="team-grid">
+                    <article class="team-card">
+                        <div class="team-avatar" aria-hidden="true">CZ</div>
+                        <div>
+                            <h3>Carlos Zamora</h3>
+                            <p class="team-role">CEO</p>
+                        </div>
+                    </article>
+                    <article class="team-card">
+                        <div class="team-avatar" aria-hidden="true">MR</div>
+                        <div>
+                            <h3>Manuel Rivera</h3>
+                            <p class="team-role">Ingeniero de servicios</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <!-- Why Choose Us -->
         <section class="section why-us-section">
             <div class="container">
@@ -1830,6 +1908,7 @@
                     <h4>Navegación</h4>
                     <ul class="footer-links">
                         <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#quienes-somos">Quiénes Somos</a></li>
                         <li><a href="#cotizador">Cotizador</a></li>
                         <li><a href="#como-trabajamos">Cómo Trabajamos</a></li>
                         <li><a href="#opiniones">Opiniones</a></li>
