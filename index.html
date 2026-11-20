@@ -884,9 +884,9 @@
             margin: 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 28px;
         }
-        .ceo-card {
+        .executive-card, .ceo-card {
             display: grid;
             grid-template-columns: 240px 1fr;
             gap: 36px;
@@ -899,7 +899,7 @@
             overflow: hidden;
             align-items: center;
         }
-        .ceo-card::before {
+        .executive-card::before, .ceo-card::before {
             content: "";
             position: absolute;
             top: 0;
@@ -907,6 +907,9 @@
             right: 0;
             height: 3px;
             background: linear-gradient(90deg, #4cc9f0, #00d2ff, transparent);
+        }
+        .executive-card--partner::before {
+            background: linear-gradient(90deg, #00d2ff, #4cc9f0, transparent);
         }
         .ceo-visual {
             display: flex;
@@ -1076,7 +1079,7 @@
             margin: 0;
         }
         @media (max-width: 860px) {
-            .ceo-card {
+            .executive-card, .ceo-card {
                 grid-template-columns: 1fr;
                 gap: 24px;
                 padding: 28px 22px;
@@ -1839,8 +1842,8 @@
                 </div>
 
                 <div class="leadership-wrap">
-                    <!-- Tarjeta Principal CEO Carlos Zamora -->
-                    <article class="ceo-card">
+                    <!-- Tarjeta Ejecutiva: Carlos Zamora (CEO) -->
+                    <article class="executive-card">
                         <div class="ceo-visual">
                             <div class="ceo-avatar-frame">
                                 <img src="carlos-zamora-ceo.jpg" alt="Carlos Zamora - CEO de CHF Ingeniería" loading="lazy">
@@ -1855,7 +1858,7 @@
                                     <p class="ceo-title">CEO de CHF Ingeniería · Ingeniero en Administración de Redes (IP AIEP)</p>
                                 </div>
                                 <div class="ceo-cred-badges">
-                                    <span class="cred-badge"><i class="fa-solid fa-clock-rotate-left"></i> +12 Años de Experiencia</span>
+                                    <span class="cred-badge"><i class="fa-solid fa-clock-rotate-left"></i> +12 Años de Trayectoria</span>
                                     <span class="cred-badge"><i class="fa-solid fa-graduation-cap"></i> IP AIEP</span>
                                 </div>
                             </div>
@@ -1865,7 +1868,7 @@
                             </p>
 
                             <div class="ceo-experience-track">
-                                <span class="exp-track-label">Experiencia en Empresas:</span>
+                                <span class="exp-track-label">Trayectoria en Empresas:</span>
                                 <div class="exp-track-tags">
                                     <span class="exp-tag">Equifax</span>
                                     <span class="exp-tag">Liebherr Chile</span>
@@ -1876,17 +1879,44 @@
                         </div>
                     </article>
 
-                    <!-- Equipo Técnico -->
-                    <div class="team-subgrid">
-                        <article class="team-subcard">
-                            <div class="team-avatar" aria-hidden="true">MR</div>
-                            <div>
-                                <h3>Manuel Rivera</h3>
-                                <p class="team-role">Ingeniero de Servicios TI</p>
-                                <p class="team-description">Especialista técnico enfocado en diagnóstico de hardware, optimización de sistemas y soporte para las necesidades tecnológicas de cada cliente.</p>
+                    <!-- Tarjeta Ejecutiva: Manuel Rivera (Ingeniería & Desarrollo) -->
+                    <article class="executive-card executive-card--partner">
+                        <div class="ceo-visual">
+                            <div class="ceo-avatar-frame">
+                                <img src="manuel-rivera.jpg" alt="Manuel Rivera - Ingeniero Senior de Servicios TI y Desarrollo Web" loading="lazy">
                             </div>
-                        </article>
-                    </div>
+                            <span class="ceo-pill"><i class="fa-solid fa-gears"></i> Mantenimiento & Desarrollo TI</span>
+                        </div>
+
+                        <div class="ceo-details">
+                            <div class="ceo-header">
+                                <div class="ceo-header-text">
+                                    <h3>Manuel Rivera</h3>
+                                    <p class="ceo-title">Ingeniero Senior de Servicios TI · Ing. Electrónico & Ing. Industrial</p>
+                                </div>
+                                <div class="ceo-cred-badges">
+                                    <span class="cred-badge"><i class="fa-solid fa-clock-rotate-left"></i> +20 Años de Trayectoria</span>
+                                    <span class="cred-badge"><i class="fa-solid fa-microchip"></i> U. Tecnológica de Chile</span>
+                                    <span class="cred-badge"><i class="fa-solid fa-industry"></i> IACC</span>
+                                </div>
+                            </div>
+
+                            <p class="ceo-bio">
+                                Con más de 20 años de sólida trayectoria trabajando en grandes empresas del país, Manuel Rivera lidera la gestión técnica, el mantenimiento integral y la continuidad operativa en CHF Ingeniería. Es Ingeniero Electrónico titulado de la Universidad Tecnológica de Chile e Ingeniero Industrial por el Instituto Profesional IACC. A lo largo de dos décadas ha planificado y ejecutado rigurosos trabajos de mantenimiento preventivo y correctivo en infraestructuras críticas, desarrollando paralelamente sistemas integrales de desarrollo web y soluciones digitales a medida para optimización de procesos. Su sólida formación interdisciplinaria garantiza diagnósticos certeros, robustez técnica y soluciones de alto estándar corporativo.
+                            </p>
+
+                            <div class="ceo-experience-track">
+                                <span class="exp-track-label">Áreas de Especialidad:</span>
+                                <div class="exp-track-tags">
+                                    <span class="exp-tag">Mantenimiento Preventivo & Correctivo</span>
+                                    <span class="exp-tag">Desarrollo Web Integral</span>
+                                    <span class="exp-tag">Ingeniería Electrónica</span>
+                                    <span class="exp-tag">Ingeniería Industrial</span>
+                                    <span class="exp-tag">Grandes Empresas del País</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
