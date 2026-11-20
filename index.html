@@ -602,13 +602,21 @@
             background: #ffffff;
         }
         .client-logo--dark {
-            background: #05070a;
+            background: #000000;
         }
         .client-logo--penon {
+            padding: 0;
             background: #02123d;
         }
+        .client-logo--penon img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            display: block;
+        }
         .client-logo--gillibrand {
-            background: #222222;
+            background: #202020;
         }
         @keyframes clients-scroll {
             to { transform: translateX(-50%); }
@@ -999,6 +1007,8 @@
             line-height: 1.7;
             color: #cbd5e1;
             margin: 0;
+            text-align: justify;
+            text-justify: inter-word;
         }
         .ceo-experience-track {
             display: flex;
@@ -1101,7 +1111,8 @@
                 justify-content: center;
             }
             .ceo-bio {
-                text-align: left;
+                text-align: justify;
+                text-justify: inter-word;
             }
         }
 
@@ -1551,10 +1562,10 @@
                             <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM.jpeg" alt="Apogen Residencia de Personas Mayores" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--dark">
-                            <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.21%20PM.jpeg" alt="Funeraria del Río" loading="lazy">
+                            <img src="clientes/funeraria-logo.png" alt="Funeraria del Río" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--penon">
-                            <img src="clientes/penon-logo-nuevo.jpg" alt="El Peñón - Siempre Junto a Ti La Florida" loading="lazy">
+                            <img src="clientes/penon-card-full.jpg" alt="El Peñón - Siempre Junto a Ti La Florida" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--light">
                             <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM%20%281%29.jpeg" alt="Alcaldesa Residencia Adulto Mayor" loading="lazy">
@@ -1563,7 +1574,7 @@
                             <img src="clientes/entis-logo.jpg" alt="Entis" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--gillibrand">
-                            <img src="clientes/grupo-gillibrand-logo.jpg" alt="Grupo Gillibrand" loading="lazy">
+                            <img src="clientes/gillibrand-logo.png" alt="Grupo Gillibrand" loading="lazy">
                         </li>
                     </ul>
                     <ul class="clients-group" aria-hidden="true">
@@ -1571,10 +1582,10 @@
                             <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM.jpeg" alt="" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--dark">
-                            <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.21%20PM.jpeg" alt="" loading="lazy">
+                            <img src="clientes/funeraria-logo.png" alt="" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--penon">
-                            <img src="clientes/penon-logo-nuevo.jpg" alt="" loading="lazy">
+                            <img src="clientes/penon-card-full.jpg" alt="" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--light">
                             <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM%20%281%29.jpeg" alt="" loading="lazy">
@@ -1583,7 +1594,7 @@
                             <img src="clientes/entis-logo.jpg" alt="" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--gillibrand">
-                            <img src="clientes/grupo-gillibrand-logo.jpg" alt="" loading="lazy">
+                            <img src="clientes/gillibrand-logo.png" alt="" loading="lazy">
                         </li>
                     </ul>
                 </div>
