@@ -605,7 +605,10 @@
             background: #05070a;
         }
         .client-logo--penon {
-            background: #10131d;
+            background: #02123d;
+        }
+        .client-logo--gillibrand {
+            background: #222222;
         }
         @keyframes clients-scroll {
             to { transform: translateX(-50%); }
@@ -872,53 +875,231 @@
             margin-bottom: 20px;
         }
 
-        /* About the team */
+        /* About & Leadership */
         .about-section {
             background: var(--bg-base);
         }
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 24px;
-            max-width: 760px;
+        .leadership-wrap {
+            max-width: 980px;
             margin: 0 auto;
-        }
-        .team-card {
             display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 28px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: var(--radius-md);
+            flex-direction: column;
+            gap: 24px;
         }
-        .team-avatar {
-            width: 64px;
-            height: 64px;
-            flex-shrink: 0;
+        .ceo-card {
             display: grid;
-            place-items: center;
-            border: 1px solid var(--border-hover);
+            grid-template-columns: 240px 1fr;
+            gap: 36px;
+            padding: 38px 40px;
+            background: linear-gradient(135deg, rgba(13, 27, 42, 0.95) 0%, rgba(9, 18, 36, 0.98) 100%);
+            border: 1px solid rgba(76, 201, 240, 0.25);
+            border-radius: var(--radius-lg);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), 0 0 24px rgba(76, 201, 240, 0.08);
+            position: relative;
+            overflow: hidden;
+            align-items: center;
+        }
+        .ceo-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #4cc9f0, #00d2ff, transparent);
+        }
+        .ceo-visual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 14px;
+        }
+        .ceo-avatar-frame {
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
-            background: rgba(76, 201, 240, 0.1);
+            overflow: hidden;
+            border: 3px solid rgba(76, 201, 240, 0.45);
+            box-shadow: 0 8px 26px rgba(0, 0, 0, 0.5), 0 0 20px rgba(76, 201, 240, 0.2);
+            position: relative;
+            background: #081121;
+        }
+        .ceo-avatar-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .ceo-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 14px;
+            background: rgba(76, 201, 240, 0.12);
+            border: 1px solid rgba(76, 201, 240, 0.35);
+            border-radius: var(--radius-full);
             color: var(--accent-blue);
-            font-family: var(--font-display);
-            font-size: 1.2rem;
+            font-size: 0.78rem;
             font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
         }
-        .team-card h3 {
+        .ceo-details {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .ceo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 14px;
+        }
+        .ceo-header-text h3 {
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #ffffff;
             margin: 0 0 4px;
+            line-height: 1.2;
         }
-        .team-role {
+        .ceo-title {
             color: var(--accent-blue);
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             font-weight: 600;
             margin: 0;
         }
-        .team-description {
-            font-size: 0.88rem;
+        .ceo-cred-badges {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        .cred-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-sm);
+            color: #94a3b8;
+            font-size: 0.78rem;
+            font-weight: 600;
+        }
+        .cred-badge i { color: var(--accent-blue); }
+        .ceo-bio {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #cbd5e1;
+            margin: 0;
+        }
+        .ceo-experience-track {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            padding-top: 6px;
+        }
+        .exp-track-label {
+            font-size: 0.78rem;
+            color: var(--text-dim);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        .exp-track-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .exp-tag {
+            font-size: 0.78rem;
+            font-weight: 600;
+            padding: 3px 9px;
+            background: rgba(76, 201, 240, 0.08);
+            border: 1px solid rgba(76, 201, 240, 0.2);
+            border-radius: var(--radius-sm);
+            color: #b6c3d6;
+        }
+        .team-subgrid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        .team-subcard {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 22px 28px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+        }
+        .team-subcard:hover {
+            border-color: var(--border-hover);
+            transform: translateY(-2px);
+        }
+        .team-subcard .team-avatar {
+            width: 56px;
+            height: 56px;
+            flex-shrink: 0;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background: rgba(76, 201, 240, 0.1);
+            border: 1px solid var(--border-hover);
+            color: var(--accent-blue);
+            font-family: var(--font-display);
+            font-size: 1.15rem;
+            font-weight: 700;
+        }
+        .team-subcard h3 {
+            margin: 0 0 3px;
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+        .team-subcard .team-role {
+            color: var(--accent-blue);
+            font-size: 0.86rem;
+            font-weight: 600;
+            margin: 0 0 6px;
+        }
+        .team-subcard .team-description {
+            font-size: 0.86rem;
             line-height: 1.5;
-            margin: 8px 0 0;
+            color: var(--text-muted);
+            margin: 0;
+        }
+        @media (max-width: 860px) {
+            .ceo-card {
+                grid-template-columns: 1fr;
+                gap: 24px;
+                padding: 28px 22px;
+                text-align: center;
+            }
+            .ceo-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .ceo-cred-badges {
+                justify-content: center;
+            }
+            .ceo-experience-track {
+                flex-direction: column;
+                align-items: center;
+            }
+            .exp-track-tags {
+                justify-content: center;
+            }
+            .ceo-bio {
+                text-align: left;
+            }
         }
 
         /* Process */
@@ -1370,10 +1551,16 @@
                             <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.21%20PM.jpeg" alt="Funeraria del Río" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--penon">
-                            <img src="clientes/penon-logo.jpg" alt="Peñón La Florida" loading="lazy">
+                            <img src="clientes/penon-logo-nuevo.jpg" alt="El Peñón - Siempre Junto a Ti La Florida" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--light">
                             <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM%20%281%29.jpeg" alt="Alcaldesa Residencia Adulto Mayor" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--light">
+                            <img src="clientes/entis-logo.jpg" alt="Entis" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--gillibrand">
+                            <img src="clientes/grupo-gillibrand-logo.jpg" alt="Grupo Gillibrand" loading="lazy">
                         </li>
                     </ul>
                     <ul class="clients-group" aria-hidden="true">
@@ -1384,10 +1571,16 @@
                             <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.21%20PM.jpeg" alt="" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--penon">
-                            <img src="clientes/penon-logo.jpg" alt="" loading="lazy">
+                            <img src="clientes/penon-logo-nuevo.jpg" alt="" loading="lazy">
                         </li>
                         <li class="client-logo client-logo--light">
                             <img src="clientes/WhatsApp%20Image%202026-11-18%20at%208.18.22%20PM%20%281%29.jpeg" alt="" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--light">
+                            <img src="clientes/entis-logo.jpg" alt="" loading="lazy">
+                        </li>
+                        <li class="client-logo client-logo--gillibrand">
+                            <img src="clientes/grupo-gillibrand-logo.jpg" alt="" loading="lazy">
                         </li>
                     </ul>
                 </div>
@@ -1639,28 +1832,61 @@
                 <div class="section-heading">
                     <div class="eyebrow">
                         <span class="eyebrow-dot"></span>
-                        <span>Nuestro equipo</span>
+                        <span>Liderazgo y Trayectoria</span>
                     </div>
                     <h2>¿Quiénes Somos?</h2>
-                    <p class="section-intro">En CHF brindamos soporte técnico y soluciones TI para personas y empresas, con un compromiso de atención cercana y transparente.</p>
+                    <p class="section-intro">En CHF combinamos ingeniería de redes, experiencia corporativa y compromiso cercano para resolver cada requerimiento tecnológico con el más alto estándar.</p>
                 </div>
-                <div class="team-grid">
-                    <article class="team-card">
-                        <div class="team-avatar" aria-hidden="true">CZ</div>
-                        <div>
-                            <h3>Carlos Zamora</h3>
-                            <p class="team-role">CEO</p>
-                            <p class="team-description">Lidera la visión de CHF y su compromiso con una atención cercana y transparente.</p>
+
+                <div class="leadership-wrap">
+                    <!-- Tarjeta Principal CEO Carlos Zamora -->
+                    <article class="ceo-card">
+                        <div class="ceo-visual">
+                            <div class="ceo-avatar-frame">
+                                <img src="carlos-zamora-ceo.jpg" alt="Carlos Zamora - CEO de CHF Ingeniería" loading="lazy">
+                            </div>
+                            <span class="ceo-pill"><i class="fa-solid fa-shield-halved"></i> CEO & Fundador</span>
+                        </div>
+
+                        <div class="ceo-details">
+                            <div class="ceo-header">
+                                <div class="ceo-header-text">
+                                    <h3>Carlos Zamora</h3>
+                                    <p class="ceo-title">CEO de CHF Ingeniería · Ingeniero en Administración de Redes (IP AIEP)</p>
+                                </div>
+                                <div class="ceo-cred-badges">
+                                    <span class="cred-badge"><i class="fa-solid fa-clock-rotate-left"></i> +12 Años de Experiencia</span>
+                                    <span class="cred-badge"><i class="fa-solid fa-graduation-cap"></i> IP AIEP</span>
+                                </div>
+                            </div>
+
+                            <p class="ceo-bio">
+                                Como CEO de CHF Ingeniería, mi misión es entregar soluciones tecnológicas con el mismo estándar de calidad que exigen las grandes corporaciones. Soy Ingeniero en Administración de Redes del IP AIEP y llevo más de 12 años dedicados al soporte informático avanzado y la infraestructura de redes. He forjado mi experiencia liderando proyectos y resolviendo problemas críticos en empresas altamente demandantes como Equifax, Liebherr Chile, Ferouch & Newman Retail y la Universidad Bernardo O'Higgins. Toda esta trayectoria hoy es el motor de nuestro servicio: confiable, experto y seguro.
+                            </p>
+
+                            <div class="ceo-experience-track">
+                                <span class="exp-track-label">Experiencia en Empresas:</span>
+                                <div class="exp-track-tags">
+                                    <span class="exp-tag">Equifax</span>
+                                    <span class="exp-tag">Liebherr Chile</span>
+                                    <span class="exp-tag">Ferouch & Newman Retail</span>
+                                    <span class="exp-tag">Universidad Bernardo O'Higgins</span>
+                                </div>
+                            </div>
                         </div>
                     </article>
-                    <article class="team-card">
-                        <div class="team-avatar" aria-hidden="true">MR</div>
-                        <div>
-                            <h3>Manuel Rivera</h3>
-                            <p class="team-role">Ingeniero de servicios</p>
-                            <p class="team-description">Enfocado en soluciones técnicas para las necesidades tecnológicas de cada cliente.</p>
-                        </div>
-                    </article>
+
+                    <!-- Equipo Técnico -->
+                    <div class="team-subgrid">
+                        <article class="team-subcard">
+                            <div class="team-avatar" aria-hidden="true">MR</div>
+                            <div>
+                                <h3>Manuel Rivera</h3>
+                                <p class="team-role">Ingeniero de Servicios TI</p>
+                                <p class="team-description">Especialista técnico enfocado en diagnóstico de hardware, optimización de sistemas y soporte para las necesidades tecnológicas de cada cliente.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
