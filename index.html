@@ -1119,16 +1119,17 @@
             gap: 28px;
         }
         .executive-card, .ceo-card {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 36px;
+            align-items: center;
             background: var(--bg-exec-card);
             border: 1px solid var(--border);
             border-radius: var(--radius-lg);
-            padding: 36px 32px;
+            padding: 36px 40px;
             position: relative;
             box-shadow: var(--card-shadow);
             overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
         }
         .executive-card::before, .ceo-card::before {
             content: "";
@@ -1150,12 +1151,12 @@
             gap: 14px;
         }
         .ceo-avatar-frame {
-            width: 86px;
-            height: 86px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             overflow: hidden;
             border: 2px solid var(--accent-blue);
-            box-shadow: 0 0 16px var(--border-glow);
+            box-shadow: 0 0 24px rgba(76, 201, 240, 0.35);
             flex-shrink: 0;
             background: var(--bg-card);
         }
@@ -1194,9 +1195,12 @@
             padding-bottom: 14px;
         }
         .ceo-header-text h3 {
-            font-size: 1.35rem;
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 800;
             color: var(--text-heading);
-            margin-bottom: 4px;
+            margin: 0 0 4px;
+            line-height: 1.2;
             transition: color 0.25s ease;
         }
         .ceo-title {
@@ -1293,10 +1297,9 @@
             font-weight: 700;
         }
         .team-subcard h3 {
-            font-size: 1.25rem;
+            margin: 0 0 3px;
+            font-size: 1.1rem;
             color: var(--text-heading);
-            margin-bottom: 4px;
-            transition: color 0.25s ease;
         }
         .team-subcard .team-role {
             color: var(--accent-blue);
